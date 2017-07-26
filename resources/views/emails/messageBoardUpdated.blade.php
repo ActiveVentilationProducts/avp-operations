@@ -3,7 +3,7 @@
 	$url = "http://operations.nori.cloud/orders";
 	if ($order->order_number != 1){
 		$title = "New message from order #: " . $order->order_number;
-		$url = "http://operations.nori.cloud/orders/" . $order->order_number;
+		$url = "http://avp-operations.com/orders/" . $order->order_number;
 	}
 ?>
 
