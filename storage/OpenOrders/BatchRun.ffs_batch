@@ -39,7 +39,7 @@
         <FolderPairs>
             <Pair>
                 <Left>\\SERVER-2015\My Documents\Excel\Morning Report</Left>
-                <Right>C:\Users\John\Desktop\open_orders</Right>
+                <Right>C:\Users\John\code\operations\storage\OpenOrders</Right>
             </Pair>
         </FolderPairs>
         <OnCompletion>Close progress dialog</OnCompletion>
