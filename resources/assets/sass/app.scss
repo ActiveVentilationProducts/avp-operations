@@ -1,0 +1,40 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+li, .badge{
+			background-color: white;
+			color: #333;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		textarea{
+			font-size: 20px !important;
+			font-family: 'Short Stack', cursive;
+			background-color: black !important;
+			color: white !important;
+		}
+		.nav-pills>li{
+			float: none;
+		}
+		.nav li{
+			max-width: 140px;
+		}
+
+		.nav li{
+			position: relative !important;
+			top: 7px !important;
+		}
+
+		#notes-button{
+			font-size: 25.9px;
+			line-height: 77.9px;
+			padding: 12.8px;
+			width: 100%;
+		}
