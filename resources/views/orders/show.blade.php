@@ -6,9 +6,11 @@
 	<h1 class="text-center">Order: {{ $order->first()['number'] }}</h1>
 	<p class="text-center">Customer: {{ $order->first()['customer'] }}</p>
 	<p class="text-center">Received: {{ app()->make('CsvParser')->excelDateToHumanReadable($order->first()['recd']) }}</p>
-	<p class="text-center">Ship Date:
-	@if ($order->first()->date !== null) 
+	<p class="text-center">Ship Date: 
+	@if (gettype($order->first()->date) == "double") 
 		{{ app()->make('CsvParser')->excelDateToHumanReadable($order->first()['date']) }}</p>
+	@else
+		{{$order->first()->date}}
 	@endif
 	<ul class="nav nav-pills center-block">
 	  <li role="presentation" class="active center-block text-center"><a href="/orders">Open Orders</a></li>
